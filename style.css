@@ -298,7 +298,7 @@ p{
 /* SETTINGS */
 
 .footer i{
-    position: absolute;
+    position: fixed;
     right: 15px;
     top: 0;
     color: var(--primary);
