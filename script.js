@@ -69,7 +69,7 @@ function upgrade100(){
 // }
 
 function upgrade1000(){
-  if(localStorage.cookie >= 10000){
+  if(localStorage.cookie >= 100000){
       localStorage.cookie -=100000;
       localStorage.perClick = Number(localStorage.perClick) + 1000;
       document.getElementById('cookies').innerHTML = localStorage.getItem('cookie');
