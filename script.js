@@ -74,6 +74,8 @@ function upgrade1000(){
       localStorage.perClick = Number(localStorage.perClick) + 1000;
       document.getElementById('cookies').innerHTML = localStorage.getItem('cookie');
       document.getElementById('valueOfPerClick').innerHTML = localStorage.getItem('perClick');
+  }else{
+    window.alert('Du hast zu wenig Coins!');
   }
 }
 
