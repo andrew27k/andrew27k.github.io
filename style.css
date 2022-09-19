@@ -5,6 +5,8 @@
 :root{
     --primary: #eb5e28;
     --hover: #dd6130a1;
+    --bg-color: #252422;
+    --bg-backup-color: #2A2D34;
 }
 
 *{
@@ -13,16 +15,11 @@
     box-sizing: border-box;
     touch-action: none;
 }
-/* 
-html{
-    height: -webkit-fill-available;
-} */
 
 body{
     width: 100%;
     min-height: 100vh;
     height: 100%;
-    /* height: -webkit-fill-available; */
     background-color: #403d39;
     font-family: 'Nunito', sans-serif;
     overflow: hidden;
@@ -46,19 +43,12 @@ body{
     user-select: none;
 }
 
-/* @media only screen and (max-width: 1024px){
-    .main-container{
-        max-width: 100%;
-    }
-} */
-
 .headline{
     color: white;
     position: relative;
     display: inline-block;
     margin-bottom: 15px;
     font-size: 25px;
-    /* padding: 0 25px 0 25px; */
 }
 
 p{
@@ -321,7 +311,7 @@ p{
     position: fixed;
     top: 0;
     right: -400px;         /*Standartwert ==   -400px     */
-    background-color: #2A2D34;
+    background-color: var(--bg-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
