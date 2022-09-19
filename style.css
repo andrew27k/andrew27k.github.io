@@ -20,7 +20,7 @@ html{
 
 body{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     height: -webkit-fill-available;
     background-color: #403d39;
     font-family: 'Nunito', sans-serif;
