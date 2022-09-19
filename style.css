@@ -20,8 +20,7 @@ html{
 
 body{
     width: 100%;
-    height: 100%;
-    min-height: 100vh;
+    height: 100vh;
     height: -webkit-fill-available;
     background-color: #403d39;
     font-family: 'Nunito', sans-serif;
@@ -51,12 +50,11 @@ body{
     user-select: none;
 }
 
-@media only screen and (max-width: 1024px){
+/* @media only screen and (max-width: 1024px){
     .main-container{
         max-width: 100%;
-        height: -webkit-fill-available;
     }
-}
+} */
 
 .headline{
     color: white;
