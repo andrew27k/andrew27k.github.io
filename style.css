@@ -13,15 +13,16 @@
     box-sizing: border-box;
     touch-action: none;
 }
-
+/* 
 html{
     height: -webkit-fill-available;
-}
+} */
 
 body{
     width: 100%;
     min-height: 100vh;
-    height: -webkit-fill-available;
+    height: 100%;
+    /* height: -webkit-fill-available; */
     background-color: #403d39;
     font-family: 'Nunito', sans-serif;
     overflow: hidden;
@@ -31,7 +32,7 @@ body{
 
 .main-container{
     max-width: 80rem;
-    height: 100%;
+    height: 100vh;
     background-color: #252422;
     top: 50%;
     position: relative;
@@ -42,11 +43,6 @@ body{
     -ms-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
     margin: 0 auto;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
     user-select: none;
 }
 
@@ -435,14 +431,9 @@ div.active{
     .settingMenu{
         min-width: 100%;
         height: 100%;
-    }
-    
-}
-
-@media only screen and (max-width: 400px) {
-    .settingMenu{
         right: -500px;
     }
+    
 }
 
 .settingFooter{
