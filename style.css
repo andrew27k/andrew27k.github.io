@@ -20,7 +20,8 @@ html{
 
 body{
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
     height: -webkit-fill-available;
     background-color: #403d39;
     font-family: 'Nunito', sans-serif;
@@ -96,6 +97,13 @@ p{
     -o-transform: scale(0.94);
     touch-action: none;
     user-select: none;
+}
+
+@media only screen and (max-width: 900px){
+    .img-cookie{
+        max-width: 40%;
+        max-height: 40%;
+    }
 }
 
 .finger{
@@ -313,7 +321,7 @@ p{
 
 .settingMenu{
     height: 100%;
-    max-width: 300px;
+    max-width: 320px;
     width: 100%;
     padding: 20px;
     position: fixed;
@@ -419,10 +427,23 @@ p{
     background-color: #111;
 }
 
+div.active{
+    content: 'A';
+    font-size: 16px;
+    text-align: center;
+}
+
 @media only screen and (max-width: 500px){
     .settingMenu{
         min-width: 100%;
         height: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 400px) {
+    .settingMenu{
+        right: -500px;
     }
 }
 
