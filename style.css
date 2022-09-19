@@ -20,7 +20,7 @@ html{
 
 body{
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     height: -webkit-fill-available;
     background-color: #403d39;
     font-family: 'Nunito', sans-serif;
@@ -31,7 +31,7 @@ body{
 
 .main-container{
     max-width: 80rem;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: #252422;
     top: 50%;
     position: relative;
