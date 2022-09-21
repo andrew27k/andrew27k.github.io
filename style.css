@@ -369,7 +369,6 @@ p{
 }
 
 .div-circle{
-    content: 'uil uil-check';
     margin: 5px;
     width: 3rem;
     height: 3rem;
@@ -438,7 +437,7 @@ p{
     left: 0;
     width: 100%;
     height: 45px;
-    background-color: var(--primary);
+    background-color: var(--bg-backup-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -448,7 +447,7 @@ p{
     text-align: center;
     font-size: 22px;
     font-weight: bolder;
-    color: #111;
+    color: var(--primary);
 }
 
 .renameBtn{
@@ -459,10 +458,10 @@ p{
     height: 100%;
     border: none;
     outline: none;
-    background-color: var(--hover);
+    background-color: var(--bg-backup-color);
     opacity: 1;
     cursor: pointer;
-    border-left: 2px solid #111;
+    border-left: 0.3em solid var(--bg-color);
 }
 
 .renameBtn:hover{
@@ -472,6 +471,7 @@ p{
 .renameBtn i{
     font-size: 20px;
     font-weight: 800;
+    color: var(--primary);
 }
 
 /* SETTINGS */
