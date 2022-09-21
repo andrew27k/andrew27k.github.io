@@ -284,7 +284,7 @@ p{
 
 
 .footer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     max-width: 80rem;
@@ -425,6 +425,9 @@ p{
         height: 100%;
         right: -500px;
         border: none;
+    }
+    .footer{
+        position: fixed;
     }
     
 }
@@ -788,6 +791,7 @@ p{
     width: 100%;
     position: absolute;
     top: 20px;
+    text-align: center;
     font-size: 1.95rem;
     color: var(--primary);
     text-decoration: underline;
