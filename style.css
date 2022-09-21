@@ -816,6 +816,11 @@ form{
     border: none;
     font-size: 1.1rem;
     padding: 10px;
+    border-radius: none;
+    -webkit-border-radius: none;
+    -moz-border-radius: none;
+    -ms-border-radius: none;
+    -o-border-radius: none;
 }
 
 .name-input-btn{
@@ -824,11 +829,15 @@ form{
     width: 120px;
     outline: none;
     border: none;
-    border-left: 2px solid #252422;
     cursor: pointer;
     font-size: 25px;
     background-color: #2A2D34;
     color: #fff;
+    border-radius: none;
+    -webkit-border-radius: none;
+    -moz-border-radius: none;
+    -ms-border-radius: none;
+    -o-border-radius: none;
 }
 
 .name-input-btn:hover{
