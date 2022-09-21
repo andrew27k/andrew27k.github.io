@@ -7,6 +7,7 @@
     --hover: #dd6130a1;
     --bg-color: #252422;
     --bg-backup-color: #2A2D34;
+    --bg-backup-color2: #484D6D;
 }
 
 *{
@@ -195,7 +196,7 @@ p{
 /* SHOP AREA */
 
 .shop-container{
-    max-width: 100%;
+    max-width: 80re,;
     display: none;
     margin-top: 55px;
     transition: all 0.4s ease-in-out;
@@ -283,9 +284,10 @@ p{
 
 
 .footer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
+    max-width: 80rem;
     width: 100%;
     height: 45px;
     background-color: #111;
@@ -320,6 +322,7 @@ p{
     -moz-transition: right 0.5s ease-in-out;
     -ms-transition: right 0.5s ease-in-out;
     -o-transition: right 0.5s ease-in-out;
+    border-left: 1px solid var(--primary);
 }
 
 .settingMenu.active{
@@ -366,6 +369,7 @@ p{
 }
 
 .div-circle{
+    content: 'uil uil-check';
     margin: 5px;
     width: 3rem;
     height: 3rem;
@@ -382,6 +386,9 @@ p{
     -moz-transition: scale 0.25s ease-in-out;
     -ms-transition: scale 0.25s ease-in-out;
     -o-transition: scale 0.25s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .div-circle:hover{
@@ -411,17 +418,13 @@ p{
     background-color: #111;
 }
 
-div.active{
-    content: 'A';
-    font-size: 16px;
-    text-align: center;
-}
 
 @media only screen and (max-width: 500px){
     .settingMenu{
         min-width: 100%;
         height: 100%;
         right: -500px;
+        border: none;
     }
     
 }
@@ -432,7 +435,7 @@ div.active{
     left: 0;
     width: 100%;
     height: 45px;
-    background-color: #484D6D;
+    background-color: var(--primary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -440,9 +443,9 @@ div.active{
 
 #usernameID{
     text-align: center;
-    font-size: 18px;
-    font-weight: 700;
-    color: #57A773;
+    font-size: 22px;
+    font-weight: bolder;
+    color: #111;
 }
 
 .renameBtn{
@@ -453,8 +456,10 @@ div.active{
     height: 100%;
     border: none;
     outline: none;
-    background-color: #3c415c;
+    background-color: var(--hover);
+    opacity: 1;
     cursor: pointer;
+    border-left: 2px solid #111;
 }
 
 .renameBtn:hover{
@@ -462,7 +467,7 @@ div.active{
 }
 
 .renameBtn i{
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 800;
 }
 
@@ -681,10 +686,11 @@ div.active{
     -moz-transition: 150ms ease-in-out;
     -ms-transition: 150ms ease-in-out;
     -o-transition: 150ms ease-in-out;
+    color: #fff;
 }
 
 .yes-button:hover{
-    background: #eb5f2865;
+    background: var(--hover);
     cursor: pointer;
 }
 
@@ -741,6 +747,7 @@ div.active{
     -moz-transition: 200ms ease-in-out;
     -ms-transition: 200ms ease-in-out;
     -o-transition: 200ms ease-in-out;
+    border: 1px solid var(--primary);
 }
 
 .firstLoadView.active{
@@ -781,12 +788,6 @@ div.active{
     width: 100%;
     position: absolute;
     top: 20px;
-    left: 40%;
-    /* transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%); */
     font-size: 1.95rem;
     color: var(--primary);
     text-decoration: underline;
@@ -846,12 +847,7 @@ form{
         width: 100%;
         position: absolute;
         top: 10px;
-        left: 25%;
-        /* transform: translateX(-50%);
-        -webkit-transform: translateX(-50%);
-        -moz-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        -o-transform: translateX(-50%); */
+        left: 0;
         font-size: 1.95rem;
         color: var(--primary);
         text-decoration: underline;
