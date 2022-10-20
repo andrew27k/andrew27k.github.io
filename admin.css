@@ -1,0 +1,150 @@
+.admin-con{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+    z-index: 999;
+    padding: 2em;
+    overflow: hidden;
+}
+
+.admin-con h1 {
+    color: #e63946;
+    text-align: center;
+}
+
+.admin-con .close{
+    position: absolute;
+    right: 0.5em;
+    top: 0.2em;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+.admin-con div{
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    /* background-color: #fff; */
+    height: 4em;
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.admin-con div button{
+    width: 150px;
+    border: none;
+    outline: none;
+    font-size: 1.5em;
+    font-weight: 600;
+    background-color: #666;
+    text-transform: uppercase;
+}
+
+.admin-con div button:hover, button:active{
+    background-color: #777;
+}
+
+.admin-con div input{
+    height: 100%;
+    width: 200px;
+    border: none;
+    outline: none;
+    padding-left: 0.7em;
+    font-size: 1.3em;
+}
+
+.admin-con div span{
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+}
+
+@media only screen and (max-width: 430px){
+
+    .admin-con div span {
+        display: none;
+    }
+}
+
+/* Ask for Password */
+
+
+.askPwContainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    max-width: 700px;
+    min-height: 4em;
+    padding: 2em;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0.4em;
+    -webkit-border-radius: 0.4em;
+    -moz-border-radius: 0.4em;
+    -ms-border-radius: 0.4em;
+    -o-border-radius: 0.4em;
+}
+
+.askPwContainer input{
+    padding: 10px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--primary);
+    border: none;
+    outline: none;
+}
+
+.askPwBtn{
+    margin-top: 1em;
+    border: none;
+    outline: none;
+    padding: 0.6em;
+    font-size: 1em;
+    font-weight: 600;
+    color: #fff;
+    background-color: #111;
+}
+
+.askPwContainer .close{
+    position: absolute;
+    top: 2px;
+    right: 8px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.6em;
+}
+
+@media only screen and (max-width: 440px){
+    .askPwContainer{
+        max-width: none;
+        min-width: 250px;
+        width: 70%;
+    }
+}

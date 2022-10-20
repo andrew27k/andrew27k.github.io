@@ -7,7 +7,7 @@ let colorYellow = document.getElementById('colorYellow');
 let colorViolett = document.getElementById('colorViolett');
 let colorOrange = document.getElementById('colorOrange');
 
-colorBlue.onclick = function(colorBlue){
+colorBlue.onclick = function(){
   r.style.setProperty('--primary', '#80CED7');
   r.style.setProperty('--hover', '#80CED7b7');
   localStorage.setItem('colorPicker', 'colorBlue');

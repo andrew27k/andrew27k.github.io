@@ -23,7 +23,6 @@ body{
     height: 100%;
     background-color: #403d39;
     font-family: 'Nunito', sans-serif;
-    overflow: hidden;
 }
 
 
@@ -42,6 +41,7 @@ body{
     -o-transition: all 0.4s ease;
     margin: 0 auto;
     user-select: none;
+    overflow: hidden;
 }
 
 .headline{
@@ -130,6 +130,18 @@ p{
     height: 45px;
     position: absolute;
     left: 0;
+}
+.img-cookie-small-new, .img-clicker-small-new{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    left: -4em;
+    top: 50%;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
 }
 
 /* span{
@@ -295,7 +307,7 @@ p{
 
 /* SETTINGS */
 
-.footer i{
+.footer .uil-setting{
     position: absolute;
     right: 15px;
     top: 0;
@@ -303,6 +315,21 @@ p{
     font-size: 35px;
     text-align: center;
     cursor: pointer;
+}
+
+.uil-user{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    color: #b40300c9;
+    text-align: center;
+    font-size: 22px;
+    cursor: pointer;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 
 .settingMenu{
@@ -833,11 +860,6 @@ form{
     font-size: 25px;
     background-color: #2A2D34;
     color: #fff;
-    border-radius: none;
-    -webkit-border-radius: none;
-    -moz-border-radius: none;
-    -ms-border-radius: none;
-    -o-border-radius: none;
 }
 
 .name-input-btn:hover{

@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="admin.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <script src="admin.js" defer></script>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>🍪Cookieclicker</title>
 </head>
@@ -46,7 +48,8 @@
             <button onclick="upgrade1000()" id="1000plus" class="btn-style">+1000<span class="coins-color"> (-100.000 Coins)</span></button>
             <button data-modal-target="#modal" id="reset" class="btn-style reset-btn">Alles auf Anfang!</button>
             <div class="footer" id="footer-bar">
-                <i id="settings" class="uil uil-setting"></i>
+                <i id="settings" class="uil uil-setting transition"></i>
+                
             </div>
             
         </div>
@@ -60,7 +63,7 @@
 
 
     <div class="settingMenu" id="settingMenu">
-        <i id="settingMenuClose" class="uil uil-arrow-circle-left setting-back"></i>
+        <i id="settingMenuClose" class="uil uil-arrow-circle-left setting-back transition"></i>
         <div class="setting-area">
             <div class="color-picker">
                 <div id="colorRed" class="div-circle color-red"></div>
@@ -73,23 +76,14 @@
                 <div class="div-circle color-placeholder"></div>
             </div>
         </div>
-        <div class="settingFooter">
+        <div class="settingFooter transition">
+            <i id="admin-control" class="uil uil-user"></i>
             <span id="usernameID">placeholder</span>
-            <button id="renameBtn" class="renameBtn"><i class="uil uil-pen"></i></button>
+            <button id="renameBtn" class="renameBtn transition"><i class="uil uil-pen"></i></button>
         </div>
     </div>
 
    
-
-
-
-
-
-
-
-
-
-
 
     <div class="modal" id="modal">
         <div class="modal-header">
@@ -99,7 +93,7 @@
         <div class="modal-body" id="modal-body-text">
         </div>
         <div class="button-field">
-            <button onclick="closeModal(modal), toDefault()" class="yes-button">👍</button>
+            <button onclick="closeModal(modal), toDefault()" class="yes-button">Ich bin mir Sicher!</button>
         </div>
     </div>
     <div id="overlay"></div>
@@ -107,14 +101,35 @@
     <div class="firstLoadView" id="firstLoadView">
         <h1 class="loadViewInfo">Namen ändern</h1>
         <!-- <button id="closeBtn" class="loadViewCloseBtn">&times;</button> -->
-            <form action="">
+            <form>
                 <div class="name-input">
-                    <input type="text" name="myName" id="myName" placeholder="Bitte gib hier deinen Namen ein." required>
+                    <input type="text" name="myName" id="myName" placeholder="Dein Name" required>
                     <button type="submit" id="myButton" class="name-input-btn"><i class="uil uil-check-circle"></i></button>
                 </div>
                 
             </form>
     </div>
+
+    <!-- <div class="admin-con">
+        <button class="close">&times;</button>
+        <h1>Admin Menü</h1>
+        <div class="cookie-input">
+            <span class="cookies">55165465</span>
+            <input type="text" placeholder="Set Coockie value">
+            <button>Add</button>
+        </div>
+        <div class="clicker-input">
+            <span class="clicks">15000000</span>
+            <input type="text" placeholder="Set Clicker value">
+            <button>Add</button>
+        </div>
+    </div> -->
+
+    <!-- <div class="askPwContainer">
+        <button class="close" id="close">&times;</button>
+        <input type="password" name="password" id="askPw" placeholder="Passwort">
+        <button class="askPwBtn">Enter</button>
+    </div> -->
 
 
 
