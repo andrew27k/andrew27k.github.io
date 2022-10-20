@@ -27,6 +27,10 @@
     cursor: pointer;
 }
 
+.admin-con .close:hover{
+    color: rgb(204, 204, 204)
+}
+
 .admin-con div{
     position: relative;
     max-width: 600px;
@@ -49,6 +53,7 @@
     font-weight: 600;
     background-color: #666;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .admin-con div button:hover, button:active{
@@ -62,6 +67,11 @@
     outline: none;
     padding-left: 0.7em;
     font-size: 1.3em;
+    border-radius: none;
+    -webkit-border-radius: none;
+    -moz-border-radius: none;
+    -ms-border-radius: none;
+    -o-border-radius: none;
 }
 
 .admin-con div span{
@@ -99,14 +109,17 @@
     min-height: 4em;
     padding: 2em;
     background-color: #000;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     border-radius: 0.4em;
     -webkit-border-radius: 0.4em;
     -moz-border-radius: 0.4em;
     -ms-border-radius: 0.4em;
     -o-border-radius: 0.4em;
+}
+
+.askPwContainer form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .askPwContainer input{
@@ -128,6 +141,7 @@
     font-weight: 600;
     color: #fff;
     background-color: #111;
+    cursor: pointer;
 }
 
 .askPwContainer .close{
@@ -139,6 +153,7 @@
     background-color: transparent;
     color: #fff;
     font-size: 1.6em;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 440px){

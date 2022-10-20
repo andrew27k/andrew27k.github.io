@@ -19,17 +19,21 @@ admin.addEventListener('click', () => {
 
     overlay.classList.add('active')
 
+    const newFormPw = document.createElement('form');
+    aksPwCon.appendChild(newFormPw);
+
     const pwInput = document.createElement('input');
     pwInput.setAttribute('type', 'password');
     pwInput.setAttribute('name', 'password');
     pwInput.setAttribute('id', 'askPw');
+    pwInput.setAttribute('autofocus', 'on');
     pwInput.setAttribute('placeholder', 'PASSWORT');
-    aksPwCon.appendChild(pwInput);
+    newFormPw.appendChild(pwInput);
 
     const pwEnter = document.createElement('button');
     pwEnter.textContent = 'Enter';
     pwEnter.classList.add('askPwBtn');
-    aksPwCon.appendChild(pwEnter);
+    newFormPw.appendChild(pwEnter);
 
     const closeBtn = document.createElement('button');
     closeBtn.classList.add('close');
@@ -94,13 +98,13 @@ admin.addEventListener('click', () => {
                 // 
             
                 const btn = document.createElement('button');
-                btn.textContent = 'add';
+                btn.textContent = 'set';
                 btn.setAttribute('id', 'add-cookie');
                 cookieInput.appendChild(btn);
                 
                 
                 const btn2 = document.createElement('button');
-                btn2.textContent = 'add';
+                btn2.textContent = 'set';
                 btn2.setAttribute('id', 'add-clicks');
                 clickerInput.appendChild(btn2);
             
@@ -139,7 +143,7 @@ admin.addEventListener('click', () => {
                 const clickerInputField = document.getElementById('clickInput');
             
                 addCookieBtn.addEventListener('click', () => {
-                    if(cookieInputField.value == 0){
+                    if(cookieInputField.value == ''){
                         console.log('Input feld darf nicht leer sein!');
                     }else{
                         localStorage.cookie = cookieInputField.value;
@@ -149,7 +153,7 @@ admin.addEventListener('click', () => {
                 });
             
                 addClicksBtn.addEventListener('click', () => {
-                    if(clickerInputField.value == 0){
+                    if(clickerInputField.value == ''){
                         console.log('Input feld darf nicht leer sein!');
                     }else {
                         localStorage.perClick = clickerInputField.value;
